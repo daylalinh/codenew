@@ -1,0 +1,76 @@
+.contact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.footer {
+    background: url(/img/footer.png) repeat-x bottom;
+}
+
+.inf {
+    text-align: center;
+}
+i {
+    color: gray;
+    padding: 10px;
+}
+
+i:hover {
+    color: pink;
+}
+.container  {
+    width: 100%;   
+    contain: content;
+    padding: 30px;
+}
+/* .backblog{
+    background: url(image/tour);
+    height: 150px;
+    display: flex;
+    position: relative;
+    margin:50px 0;
+    align-items: center;
+} */
+.backblog img {
+    position: absolute;
+    right: 0;
+}
+.font{
+    display: flex;
+    border-top: 1px solid orange;
+    border-bottom: 1px solid orange;
+    color: orange;
+    
+}
+.mid{
+    border: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    display: flex;
+    border-right: solid orange 1px;
+    justify-content: space-between;
+    padding-top: 30px;
+
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding-top: 100px;
+}
+.left img{
+    transform: translateX(1px);
+
+}
+.right img{
+    transform: translateX(-1px);
+
+}
+.mid2{
+    display: flex;
+    justify-content: center;
+}

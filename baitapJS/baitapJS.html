@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mau {
+            display: flex;
+        }
+
+        #o1 {
+            width: 300px;
+            height: 300px;
+
+        }
+
+        #o2 {
+            width: 300px;
+            height: 300px;
+
+        }
+
+        .nut {
+            width: 80px;
+            height: 30px;
+            border: solid 2px orange;
+            margin-top: 10px;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .box1 {
+            background-color: blue;
+        }
+
+        .box2 {
+            background-color: red;
+        }
+    </style>
+    <style>
+        /* #khung {
+            width: 600px;
+            height: 300px;
+            background-color: blue;
+            position: relative;
+           
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+
+        }
+
+        .phai {
+            position: absolute;
+            right: 0;
+            transition-timing-function: ease;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="mau">
+        <div id="o1" class="red box1">
+
+        </div>
+        <div id="o2" class="blue box2"></div>
+    </div>
+    <button class="nut" id="button"> Đổi màu </button>
+    <script> 
+    let o1= document.getElementById("o1")
+        let o2= document.getElementById("o2")
+        document.getElementById("button").addEventListener("click",function(){
+        // console.log(o1.classList.contains("red"))
+            if (o1.classList.contains("red")){
+            o1.classList.add("blue")
+
+            o1.classList.remove("red")
+            o2.classList.remove ("blue")
+            o2.classList.add("red")
+        } else { o2.classList.add("blue")
+            o2.classList.remove("red")
+            o1.classList.remove ("blue")
+            o1.classList.add("red")
+
+        }
+        })
+        // let o1 = document.getElementById("o1")
+        // let o2 = document.getElementById("o2")
+        // document.getElementById("button").onclick = function () {
+        //     o1.classList.toggle("box1")
+        //     o2.classList.toggle("box2")
+
+        // }
+        console.log()
+
+</script>
+    <div id="khung">
+        <div class="box phai"></div>
+    </div>
+    <button id="dichuyen">phai</button>
+    <script>
+        document.getElementById("dichuyen").onclick = function () {
+            // document.getElementsByClassName("box")[0].classList.remove("phai")
+
+            // if( document.getElementsByClassName("box")[0].classList.contains("phai")){
+            //     document.getElementsByClassName("box")[0].classList.add("phai")
+
+            // }
+            //    else {document.getElementsByClassName("box").classList.remove("phai")}
+
+            document.getElementsByClassName("box")[0].classList.toggle("phai")
+            if (document.getElementById("dichuyen").innerHTML === "phai"
+            ) {
+                document.getElementById("dichuyen").innerHTML = "trai";
+            } else {
+                document.getElementById("dichuyen").innerHTML = "phai";
+            }
+        }
+    </script>
+</body>
+
+</html>

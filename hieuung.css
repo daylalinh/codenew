@@ -1,0 +1,36 @@
+
+ul.icontong {
+    float: left;
+    display: flex ;
+  
+    padding: 0px; 
+}
+i:hover {
+color: pink;
+}
+i {
+    color: gray;
+}
+li {
+    list-style-type: none;
+    padding: 10px;
+
+}
+
+
+.menu :hover {
+    color: pink;
+}
+.slider{
+    background-image: url(/img/slider-bg.png);
+    padding: 10px;
+    margin: 30px;
+}
+
+.img-wrap{
+    position: relative;
+    width: auto;
+}
+.row{
+    margin: 50px;
+}

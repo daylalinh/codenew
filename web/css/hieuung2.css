@@ -1,0 +1,130 @@
+ .container  {
+     width: 100%;
+     
+     contain: content;
+     padding: 30px;
+    
+     
+}
+.noidung{
+    background: url(/img/slider-bg.png) bottom left repeat-x;
+
+    height: 550px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+i{
+    color: gray;   
+    padding: 10px;
+}
+i:hover{
+    color: pink;
+}
+p,h1,h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+li{
+    color: gray;
+}
+
+
+.img-wrap{
+    position: relative;
+    width: 100%;
+    height: 550px;
+}
+.img-wrap img{
+    position: absolute;
+}
+.img-xedap{
+   
+    animation-name: slide;
+    bottom: 0;
+    left: 0px;
+    animation-duration: 2s ;
+}
+.img-nha{
+    bottom: 0;
+    right: 20px;
+    animation: 1s ease-in;
+}
+.img-sun{
+    top: 0%;
+    right:20px;
+    animation: 1s ease-in-out;
+}
+.slideInLeft{
+    animation-name: slideInLeft;
+}
+.maybay{
+    background: url(/img/tour-bg.png) repeat-x;
+    position: relative;
+}
+.mbay-icon{
+    position: absolute;
+    top: 0;
+    left: 40%;
+    align-items: center;
+
+
+}
+.take button{
+    width: 200px;
+
+}
+.anh, .cuoi{
+    text-align: center;
+    padding: 20px;
+    
+}
+.ta-right{
+    text-align: right;
+}
+h2,p{
+    margin-top: 30px;
+    
+}
+.ank, .menuchay{
+    display: flex;
+    justify-content: center;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #f4f2ed;
+   
+    padding: 12px 20px;
+  width: 100% ;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: orange;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .contact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  .footer{
+    background: url(/image/footer.png) repeat-x bottom;
+  }
+  .inf{
+  text-align: center;
+  }
